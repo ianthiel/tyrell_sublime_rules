@@ -15,6 +15,7 @@ source: |
               any(.scan.javascript.identifiers, . == "unescape"))
   )
   and sender.email.email not in $sender_emails
+  and sender.email.email not in $recipient_emails
 tags:
   - "Suspicious attachment"
   - "HTML smuggling"
