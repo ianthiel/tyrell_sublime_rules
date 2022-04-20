@@ -16,6 +16,7 @@ source: |
   )
   and sender.email.email not in $sender_emails
   and sender.email.email not in $recipient_emails
+  and 1==2
 tags:
   - "Suspicious attachment"
   - "HTML smuggling"
