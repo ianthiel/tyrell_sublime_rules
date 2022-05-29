@@ -1,0 +1,8 @@
+name: "Freemail sender"
+description: |
+  A simple triage rule that checks if the sender is using a freemail provider.
+type: "triage rule"
+source: |
+  sender.email.domain.root_domain in $free_email_providers
+tags:
+  - "Suspicious sender"
